@@ -16,4 +16,4 @@ ragas_dataset = [
 with open("ragas_hr_dataset.json", "w") as f:
     json.dump(ragas_dataset, f, indent=2)
 
-print("RAGAS-formatted dataset saved to ragas_hr_dataset.json")
+print("RAGAS-formatted dataset saved to ragas_dataset.json")

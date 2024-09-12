@@ -48,7 +48,7 @@ def parse_qa_pairs(text):
 qa_pairs = generate_hr_qa_pairs(50)
 
 # Save to JSON file
-with open("hr_qa_dataset.json", "w") as f:
+with open("qa_dataset.json", "w") as f:
     json.dump(qa_pairs, f, indent=2)
 
 print(f"Generated {len(qa_pairs)} Q&A pairs and saved to qa_dataset.json")
