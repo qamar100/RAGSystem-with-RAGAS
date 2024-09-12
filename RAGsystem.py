@@ -23,11 +23,17 @@ from langchain.memory import ConversationBufferMemory
 from langchain.chains import ConversationChain
 from langchain.llms import OpenAI as LangChainOpenAI
 from langchain.memory import ConversationBufferWindowMemory
+from dotenv import load_dotenv
+
+
+load_dotenv()
 
 
 # Environment variable setup
 api_key = os.getenv("OPENAI_API_KEY")
 lamacloud_api_key = os.getenv("LLAMA_CLOUD_API_KEY") #used for  parsing the documet
+
+
 # FastAPI setup
 app = FastAPI()
 
