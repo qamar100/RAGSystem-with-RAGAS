@@ -10,7 +10,7 @@ load_dotenv()
 api_key = os.getenv("OPENAI_API_KEY")
 client = OpenAI(api_key=api_key)
 
-def generate_hr_qa_pairs(num_pairs=50):
+def generate_qa_pairs(num_pairs=50):
     all_qa_pairs = []
     
     for i in range(0, num_pairs, 10):  # Generate in batches of 10
@@ -45,7 +45,7 @@ def parse_qa_pairs(text):
     return pairs
 
 # Generate 50 Q&A pairs
-qa_pairs = generate_hr_qa_pairs(50)
+qa_pairs = generate_qa_pairs(50)
 
 # Save to JSON file
 with open("qa_dataset.json", "w") as f:
