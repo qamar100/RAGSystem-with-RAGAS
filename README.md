@@ -18,12 +18,12 @@ This project implements a **Retrieval-Augmented Generation (RAG) system** with F
 
 2. **Synthetic Data Generation (`GenerateData.py`)**:
    - Generates synthetic question-answer pairs using OpenAI's GPT models.
-   - Formats and saves the data in Json for RAGAS evaluation.
+   - Formats and saves the data in JSON for RAGAS evaluation.
 
 3. **Data Formatting for RAGAS (`formattedDS.py`)**:
    - Converts the synthetic data into a format suitable for RAGAS evaluation.
 
-4. **Evaluation Script (`RagasEvaL.py`)**:
+4. **Evaluation Script (`RagasEval.py`)**:
    - Loads the formatted dataset and evaluates the RAG system using RAGAS metrics.
    - Analyzes and prints the results for various evaluation metrics.
 
@@ -77,7 +77,7 @@ This project implements a **Retrieval-Augmented Generation (RAG) system** with F
     Convert the generated data into RAGAS-compatible format:
 
     ```bash
-    python formattedds.py
+    python formattedDS.py
     ```
 
     **Note**: After generating and formatting the data, review the `qa_dataset.json` and `ragas_dataset.json` files. Make any necessary adjustments to ensure data quality before proceeding with evaluation.
@@ -111,4 +111,3 @@ This project implements a **Retrieval-Augmented Generation (RAG) system** with F
 ## Contributing
 
 Feel free to submit issues or pull requests to improve the system.
-
